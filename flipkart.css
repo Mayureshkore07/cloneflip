@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    background-color: #a5d81a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px
+}
+
+.serach {
+    background-color: white;
+    padding: 8px 20px;
+    width: 600px;
+    height: 20px;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #2874f0;
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.serach input {
+    width: 95%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: -50px;
+}
+
+.loginbtn {
+    padding: 7px 40px;
+    font-size: 16px;
+    font-weight: 550;
+    border: none;
+    outline: none;
+    color: #381e99;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+.logindi:hover{
+    background-color: #381e99;
+}
+
+.logindiv:hover .arrow{
+    animation-name: spin;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;
+}
+
+.user {
+    margin: 0px 10px;
+}
+
+.Navlink {
+    margin: 0px 20px;
+    font-size: 18px;
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+
+}
+
+.angledownoicon i {
+    font-size: 10px;
+}
+
+
+
+.Recentserch {
+    display: none;
+    position: absolute;
+    top: 49px;
+    background-color: rgb(255, 255, 255);
+    width: 420px;
+    padding: 8px 10px;
+    margin-left: -10px;
+    height: 350px;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2),
+        5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #ccc;
+}
+
+.RecentSerchList {
+    font-size: 15px;
+    display: flex;
+    color: #777676;
+
+}
+
+.RecentSerchList p,
+.RecentSerchList_Disc p {
+    padding-left: 15px;
+    color: rgb(71, 66, 66);
+
+
+}
+
+.DiscoverMore {
+    margin: 15px 0px;
+    font-size: 15px;
+    color: #777676;
+
+}
+
+.RecentSerchList_Disc {
+    padding: 10px 0px;
+    display: flex;
+
+}
+
+.RecentSerchList_Disc i {
+    color: #777676;
+    font-size: 20px;
+}
+
+.serach:focus-within .Recentserch {
+    display: block;
+}
+
+
+/*login bgt8*/
+.HoverLogin {
+    position: absolute;
+    top: 50px;
+    height: 300px;
+    width: 280px;
+    margin-left: -40px;
+    background-color: #ffffff;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2),
+        5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 15px;
+    font-weight: 500;
+    color: black;
+display: none;
+
+}
+
+.Newuser {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.Newuser a {
+    color: royalblue;
+    text-decoration: none;
+}
+
+.Newuser a:hover {
+    text-decoration: underline;
+}
+
+.LoginMenu {
+    width: 280px;
+    margin-top: 25px;
+}
+
+.MenuList {
+    display: flex;
+    padding-left: 10px;
+    padding: 10px 0px;
+}
+
+.MenuList p {
+    padding-left: 20px;
+}
+
+.loginbtn:hover .HoverLogin{
+    display: flex;
+    cursor: pointer;
+   
+}
+
+.buttonmore{
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+}
