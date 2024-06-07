@@ -44,7 +44,7 @@
     background-color: transparent;
     
 }
-.logindi:hover{
+.logindiv:hover{
     background-color: #381e99;
 }
 
@@ -52,6 +52,15 @@
     animation-name: spin;
     animation-fill-mode: forwards;
     animation-duration: 300ms;
+}
+
+@keyframes spin {
+         from{
+            transform: rotate(0deg);
+         }
+         to{
+            transform: rotate(180deg);
+         }
 }
 
 .user {
