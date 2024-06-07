@@ -190,8 +190,8 @@ display: none;
 
 .Hovermore{
     position: absolute;
-    
-    top: 50px;
+    left: 80vw;
+    top: 6vh;
     height: 300px;
     width: 280px;
     margin-right: 400px;
