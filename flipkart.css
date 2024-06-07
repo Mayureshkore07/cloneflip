@@ -43,27 +43,29 @@
     color: #000000;
     cursor: pointer;
     background-color: transparent;
-    
+
 }
-.logindiv:hover{
+
+.logindiv:hover {
     background-color: #6236ff;
     color: #ffffff;
     border: #000000;
 }
 
-.logindiv:hover .arrow{
+.logindiv:hover .arrow {
     animation-name: spin;
     animation-fill-mode: forwards;
     animation-duration: 300ms;
 }
 
 @keyframes spin {
-         from{
-            transform: rotate(0deg);
-         }
-         to{
-            transform: rotate(180deg);
-         }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
 }
 
 .user {
@@ -89,7 +91,7 @@
     position: absolute;
     top: 49px;
     background-color: rgb(255, 255, 255);
-    width: 420px;
+    width: 600px;
     padding: 8px 10px;
     margin-left: -10px;
     height: 350px;
@@ -140,8 +142,8 @@
 .HoverLogin {
     position: absolute;
     top: 50px;
-    height: 300px;
-    width: 280px;
+    height: 360px;
+    width: 260px;
     margin-left: -40px;
     background-color: #ffffff;
     box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2),
@@ -152,7 +154,7 @@
     padding: 0px 15px;
     font-weight: 500;
     color: black;
-display: none;
+    display: none;
 
 }
 
@@ -188,59 +190,97 @@ display: none;
     padding-left: 20px;
 }
 
-.loginbtn:hover .HoverLogin{
+.loginbtn:hover .HoverLogin {
     display: flex;
     cursor: pointer;
-   
+
 }
 
-.Navlinkcart:hover{
-text-decoration: underline;
-color: #000000;
-}
-
-
-.buttonmore{
+.buttonmore {
     padding: 8px 20px;
     text-decoration: none;
     border: none;
     background-color: transparent;
 }
 
-.Hovermore{
+.Hovermore {
     position: absolute;
     left: 74vw;
     top: 7vh;
-    height: 190px;
-    width: 280px;
+    height: 160px;
+    width: 230px;
     margin-right: 400px;
     background-color: white;
     box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2),
         5px 5px 10px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-        align-items: center;
-        flex-direction: column;
-        padding: 0px 15px;
-        font-weight: 500;
-        color: black;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 15px;
+    font-weight: 500;
+    color: black;
     display: none;
 
 }
 
-.Newmore{
+.Newmore {
     width: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 15px;
     padding: 10px;
 }
-.Navlinkmore{
 
-}
+.Navlinkmore {}
 
-.buttonmore:hover .Hovermore{
+.buttonmore:hover .Hovermore {
     display: flex;
     cursor: pointer;
 }
 
 
+
+/*********** top product************/
+
+.TopproductNavbar{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px;
+    border-bottom:1px solid #ccc;
+    
+}
+.productNavbar_top{
+    height: 100px;
+    width: 80px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.productNavbar_top img{
+    width: 64px;
+    height: 64px;
+}
+
+.productNavbar_top p{
+    font-weight: 510;
+}
+.productNavbar_top:hover p{
+    color: #2874f0;
+}
+
+.productNavbar_top:hover.arrow{
+    animation-name: spin;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
