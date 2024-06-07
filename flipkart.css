@@ -34,18 +34,21 @@
 }
 
 .loginbtn {
-    padding: 7px 40px;
+    padding: 8px 20px;
+
     font-size: 16px;
     font-weight: 550;
     border: none;
     outline: none;
-    color: #381e99;
+    color: #000000;
     cursor: pointer;
     background-color: transparent;
     
 }
 .logindiv:hover{
-    background-color: #381e99;
+    background-color: #6236ff;
+    color: #ffffff;
+    border: #000000;
 }
 
 .logindiv:hover .arrow{
@@ -191,7 +194,14 @@ display: none;
    
 }
 
+.Navlinkcart:hover{
+text-decoration: underline;
+color: #000000;
+}
+
+
 .buttonmore{
+    padding: 8px 20px;
     text-decoration: none;
     border: none;
     background-color: transparent;
@@ -199,14 +209,38 @@ display: none;
 
 .Hovermore{
     position: absolute;
-    left: 80vw;
-    top: 6vh;
-    height: 300px;
+    left: 74vw;
+    top: 7vh;
+    height: 190px;
     width: 280px;
     margin-right: 400px;
     background-color: white;
     box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2),
         5px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 15px;
+        font-weight: 500;
+        color: black;
+    display: none;
+
+}
+
+.Newmore{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 10px;
+}
+.Navlinkmore{
+
+}
+
+.buttonmore:hover .Hovermore{
+    display: flex;
+    cursor: pointer;
 }
 
 
