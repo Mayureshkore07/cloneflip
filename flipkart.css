@@ -206,7 +206,7 @@
 .Hovermore {
     position: absolute;
     left: 74vw;
-    top: 7vh;
+    top: 9vh;
     height: 160px;
     width: 230px;
     margin-right: 400px;
@@ -264,15 +264,19 @@
 
 .productNavbar_top p{
     font-weight: 510;
+    display: flex;
+
 }
 .productNavbar_top:hover p{
     color: #2874f0;
 }
 
+.producttoparrow{
+   size: 4vh;
+
+}
 .productNavbar_top:hover.arrow{
-    animation-name: spin;
-    animation-fill-mode: forwards;
-    animation-duration: 300ms;
+   
 }
 
 @keyframes spin {
