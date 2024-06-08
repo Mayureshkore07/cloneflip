@@ -231,7 +231,7 @@
     padding: 10px;
 }
 
-.Navlinkmore {}
+
 
 .buttonmore:hover .Hovermore {
     display: flex;
@@ -275,8 +275,10 @@
    size: 4vh;
 
 }
-.productNavbar_top:hover.arrow{
-   
+.productNavbar_top:hover i{
+    animation-name: spin;
+    animation-fill-mode: forwards;
+    animation-duration: 300ms;
 }
 
 @keyframes spin {
