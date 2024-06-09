@@ -318,7 +318,7 @@
     padding: 0px 15px;
     font-weight: 500;
     color: black;
-    
+    display: none;
 
 }
 
@@ -336,7 +336,7 @@
 
 }
 
-.Topproducthover{
+.Topproducthover {
     position: absolute;
     left: 35vw;
     top: 23vh;
@@ -352,5 +352,53 @@
     padding: 0px 15px;
     font-weight: 500;
     color: black;
-    
+    display: none;
+}
+
+
+
+/***********slider***********/
+.slider {
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+}
+
+.sliderimg {
+    width: 100%;
+    /* padding: 0px 10px; */
+    padding-right: 20px;
+    height: 260px;
+}
+
+.slider_image {
+    display: flex;
+    padding: 0px 10px;
+}
+
+.btn-container {
+    margin: auto;
+    width: 10px;
+
+
+}
+
+.btn {
+    padding: 35px 15px;
+    background-color: white;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.btn_right {
+    left: -40px;
+    position: relative;
+}
+
+.btn_left {
+    position: relative;
+
 }
