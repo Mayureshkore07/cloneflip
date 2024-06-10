@@ -237,16 +237,12 @@
     display: flex;
     cursor: pointer;
 }
-
-
-
 /*********** top product************/
-
 .TopproductNavbar {
     height: 100px;
     display: flex;
     justify-content: center;
-    padding: 10px 50px;
+    padding: 15px 90px;
     border-bottom: 1px solid #ccc;
 
 }
