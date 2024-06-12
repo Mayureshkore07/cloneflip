@@ -4,18 +4,18 @@
 }
 
 .nav {
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px
+    padding: 15px 0px;
 }
 
 .serach {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.449);
     padding: 8px 20px;
-    width: 600px;
-    height: 20px;
+    width: 750px;
+    height: 30px;
     margin: 0px 15px;
     display: flex;
     justify-content: space-between;
@@ -30,12 +30,12 @@
     border: none;
     outline: none;
     font-size: 14px;
-    padding: -50px;
+    padding: -40px;
+    background-color: #e6e5e5be;
 }
 
 .loginbtn {
     padding: 8px 20px;
-
     font-size: 16px;
     font-weight: 550;
     border: none;
@@ -241,7 +241,7 @@
     display: flex;
     justify-content: center;
     padding: 25px 90px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #0b0b0b;
 
 }
 
@@ -448,7 +448,7 @@ display: none;
     position: absolute;
     left: 80vw;
     top: 23vh;
-    height: 460px;
+    height: 75px;
     width: 230px;
     margin-right: 400px;
     background-color: white;
