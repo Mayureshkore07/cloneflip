@@ -230,15 +230,10 @@
     font-size: 15px;
     padding: 10px;
 }
-
-
-
 .buttonmore:hover .Hovermore {
     display: flex;
     cursor: pointer;
 }
-
-
 
 /*********** top product************/
 .TopproductNavbar {
@@ -404,6 +399,13 @@
     color: black;
 display: none;
 }
+.Productmorehome{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 10px;
+}
 
 .productNavbar_top:hover .TopproducthomeHover{
     cursor: pointer;
@@ -428,8 +430,15 @@ display: none;
     color: black;
     display: none;
 }
+.Productmorebeauty{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 10px;
+}
 
-.TopproductNavbar:hover .TopproductbeautyHover{
+.productNavbar_top:hover .TopproductbeautyHover{
     display: flex;
     cursor: pointer;
 }
@@ -454,7 +463,7 @@ display: none;
     display: none;
 }
 
-.TopproductNavbar:hover .TopproductvehicalsHover{
+.productNavbar_top:hover .TopproductvehicalsHover{
     display: flex;
     cursor: pointer;
 }
@@ -462,26 +471,24 @@ display: none;
 .slider {
     width: 100%;
     display: flex;
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 .sliderimg {
-    width: 100%;
+    width: auto;
     /* padding: 0px 10px; */
-    padding-right: 20px;
-    height: 30vh;
+    padding-right: 10px;
+    height: auto;
 }
 
 .slider_image {
     display: flex;
-    padding: 0px 10px;
+    padding: 10px 10px;
 }
 
 .btn-container {
     margin: auto;
-    width: 10vh;
-
-
+    width: 10px;
 }
 
 .btn {
