@@ -510,3 +510,12 @@ display: none;
     position: relative;
 
 }
+
+/****** bottom priduct********/
+.bottomproduct{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    padding: 25px 90px;
+    border-bottom: 1px solid #0b0b0b;
+}
