@@ -1,53 +1,81 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: #F1F2F4;
+}
+
+.container {
+    max-width: 1334px;
+    margin: auto;
+}
+
+
 .nav {
-    background-color: #ffffff;
+
+    height: 50px;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 15px 0px;
+    justify-content: space-evenly;
+    color: #474748;
+    background-color: white;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav .cmpname {
+    width: 130px;
 }
 
 .serach {
-    background-color: rgba(255, 255, 255, 0.449);
-    padding: 8px 20px;
-    width: 750px;
     height: 30px;
-    margin: 0px 15px;
+    width: 600px;
+    border-radius: 5px;
     display: flex;
-    justify-content: space-between;
-    color: #2874f0;
-    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.1);
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
+    align-items: center;
+    color: #777A7E;
+    background-color: #F0F5FF;
+}
+
+.serach i {
+    font-size: 1rem;
+    margin: 0px 10px;
 }
 
 .serach input {
-    width: 95%;
-    border: none;
+    height: 40px;
+    width: 100%;
     outline: none;
-    font-size: 14px;
-    padding: -40px;
-    background-color: #e6e5e5be;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
 }
 
 .loginbtn {
-    padding: 8px 20px;
-    font-size: 16px;
-    font-weight: 550;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 300;
     border: none;
-    outline: none;
-    color: #000000;
-    cursor: pointer;
-    background-color: transparent;
+}
 
+.loginbtn i {
+    font-size: 1rem;
+}
+
+div>.ldicon {
+    font-size: 0.7rem;
 }
 
 .logindiv:hover {
-    background-color: #6236ff;
+    background-color: #3700ff;
     color: #ffffff;
     border: #000000;
 }
@@ -69,13 +97,14 @@
 }
 
 .user {
-    margin: 0px 10px;
+    margin: 10px 10px;
+
 }
 
 .Navlink {
     margin: 0px 20px;
-    font-size: 18px;
-    color: rgb(14, 13, 13);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 
 }
@@ -89,11 +118,11 @@
 .Recentserch {
     display: none;
     position: absolute;
-    top: 49px;
+    top: 44px;
     background-color: rgb(255, 255, 255);
     width: 600px;
     padding: 8px 10px;
-    margin-left: -10px;
+    margin-left: -3px;
     height: 350px;
     box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2),
         5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -101,7 +130,7 @@
 }
 
 .RecentSerchList {
-    font-size: 15px;
+    font-size: 12px;
     display: flex;
     color: #777676;
 
@@ -117,8 +146,8 @@
 
 .DiscoverMore {
     margin: 15px 0px;
-    font-size: 15px;
-    color: #777676;
+    font-size: 12px;
+    color: #535353;
 
 }
 
@@ -130,7 +159,7 @@
 
 .RecentSerchList_Disc i {
     color: #777676;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .serach:focus-within .Recentserch {
@@ -141,10 +170,10 @@
 /*login bgt8*/
 .HoverLogin {
     position: absolute;
-    top: 50px;
-    height: 360px;
-    width: 260px;
-    margin-left: -40px;
+    top: 40px;
+    height: 280px;
+    width: 200px;
+    margin-left: 100px;
     background-color: #ffffff;
     box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2),
         5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -162,13 +191,15 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 12px;
     padding: 10px;
 }
 
 .Newuser a {
     color: royalblue;
     text-decoration: none;
+    font-weight: 500;
+    
 }
 
 .Newuser a:hover {
@@ -176,8 +207,8 @@
 }
 
 .LoginMenu {
-    width: 280px;
-    margin-top: 25px;
+    width: 170px;
+    margin-top: 2px;
 }
 
 .MenuList {
@@ -187,7 +218,7 @@
 }
 
 .MenuList p {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .loginbtn:hover .HoverLogin {
@@ -205,10 +236,10 @@
 
 .Hovermore {
     position: absolute;
-    left: 74vw;
-    top: 9vh;
-    height: 160px;
-    width: 230px;
+    left: 80vw;
+    top: 6vh;
+    height: 140px;
+    width: 200px;
     margin-right: 400px;
     background-color: white;
     box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2),
@@ -227,21 +258,33 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 12px;
     padding: 10px;
 }
+
 .buttonmore:hover .Hovermore {
     display: flex;
     cursor: pointer;
 }
 
+
+
+
+
+
 /*********** top product************/
+.TopproductNavbar_container {
+    height: 140px;
+}
+
 .TopproductNavbar {
-    height: 10vh;
+    height: 100px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 25px 90px;
-    border-bottom: 1px solid #0b0b0b;
+    background-color: white;
+    margin: 10px 10px;
+
 
 }
 
@@ -250,6 +293,7 @@
     width: 50px;
     cursor: pointer;
     flex: 1;
+    margin: 0px;
 }
 
 .productNavbar_top img {
@@ -264,15 +308,15 @@
 }
 
 .productNavbar_top:hover p {
-    color: #2874f0;
+    color: #d6440a;
 }
 
 .producttoparrow {
-    size: 4px;
+    size: 2px;
 
 }
 
-.productNavbar_top:hover i{
+.productNavbar_top:hover i {
     animation-name: spin;
     animation-fill-mode: forwards;
     animation-duration: 300ms;
@@ -330,10 +374,11 @@
 
 }
 
+
 .Topproducthover {
     position: absolute;
     left: 50vw;
-    top: 25vh;
+    top: 23vh;
     height: 460px;
     width: 230px;
     margin-right: 400px;
@@ -349,14 +394,15 @@
     display: none;
 }
 
-.ProductmoreFaishon{
+.ProductmoreFaishon {
     width: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 15px;
     padding: 10px;
 }
-.TopproductFaishonHover{
+
+.TopproductFaishonHover {
     position: absolute;
     left: 35vw;
     top: 23vh;
@@ -376,12 +422,12 @@
 
 }
 
-.productNavbar_top:hover .TopproductFaishonHover{
+.productNavbar_top:hover .TopproductFaishonHover {
     cursor: pointer;
     display: flex;
 }
 
-.TopproducthomeHover{
+.TopproducthomeHover {
     position: absolute;
     left: 45vw;
     top: 23vh;
@@ -397,9 +443,10 @@
     padding: 0px 15px;
     font-weight: 500;
     color: black;
-display: none;
+    display: none;
 }
-.Productmorehome{
+
+.Productmorehome {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -407,12 +454,12 @@ display: none;
     padding: 10px;
 }
 
-.productNavbar_top:hover .TopproducthomeHover{
+.productNavbar_top:hover .TopproducthomeHover {
     cursor: pointer;
     display: flex
 }
 
-.TopproductbeautyHover{
+.TopproductbeautyHover {
     position: absolute;
     left: 65vw;
     top: 23vh;
@@ -430,7 +477,8 @@ display: none;
     color: black;
     display: none;
 }
-.Productmorebeauty{
+
+.Productmorebeauty {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -438,13 +486,13 @@ display: none;
     padding: 10px;
 }
 
-.productNavbar_top:hover .TopproductbeautyHover{
+.productNavbar_top:hover .TopproductbeautyHover {
     display: flex;
     cursor: pointer;
 }
 
 
-.TopproductvehicalsHover{
+.TopproductvehicalsHover {
     position: absolute;
     left: 80vw;
     top: 23vh;
@@ -463,22 +511,28 @@ display: none;
     display: none;
 }
 
-.productNavbar_top:hover .TopproductvehicalsHover{
+.productNavbar_top:hover .TopproductvehicalsHover {
     display: flex;
     cursor: pointer;
 }
+
+
 /***********slider***********/
+
 .slider {
-    width: 100%;
+    height: 200px;
     display: flex;
-    padding: 10px 0px;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .sliderimg {
-    width: auto;
-    /* padding: 0px 10px; */
-    padding-right: 10px;
-    height: auto;
+    height: 200px;
+    width: 100%;
+    padding: 0px 0px;
+    padding-right: 5px;
+
 }
 
 .slider_image {
@@ -492,18 +546,26 @@ display: none;
 }
 
 .btn {
-    padding: 35px 15px;
+    padding: 30px 15px;
+    color: #8B8B8B;
     background-color: white;
-    font-size: 30px;
+    font-size: 10px;
     outline: none;
     border: none;
     border-radius: 5px;
+    height: 88px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 
 }
 
 .btn_right {
     left: -40px;
     position: relative;
+
 }
 
 .btn_left {
@@ -511,11 +573,220 @@ display: none;
 
 }
 
-/****** bottom priduct********/
-.bottomproduct{
-    height: 10vh;
+
+/******best of electronics******/
+.productsectin1 {
+    height: 345px;
+    width: 100%;
     display: flex;
+    margin-top: 10px;
+}
+
+.psright {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 25px 90px;
-    border-bottom: 1px solid #0b0b0b;
+    background-color: white;
+}
+
+.psright img {
+    height: 320px;
+    width: 210px;
+
+}
+
+.psleft {
+    height: 100%;
+    width: 1100px;
+    background-color: white;
+}
+
+.productheader {
+    height: 80px;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productheader h3 {
+    color: #212121;
+}
+
+.productheader i {
+    height: 24px;
+    width: 24px;
+    color: white;
+    background-color: #1c41dc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+.product {
+    height: 250px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px groove #bdbdbd;
+    border-radius: 3px;
+    margin: 0px 13px;
+}
+
+.product img {
+    height: 150px;
+    width: 185px;
+    padding: 0px 10px;
+}
+
+.productinfo {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.productinfo p {
+    font-size: 0.9rem;
+
+}
+
+.productinfo h5 {
+    color: #212121;
+    margin-top: 5px;
+}
+
+.productgroup {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.productiright {
+    position: absolute;
+    height: 88px;
+    width: 40px;
+    background-color: white;
+    color: #8B8B8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 32%;
+    right: 0;
+    -webkit-box-shadow: -2px 0px 3px 1px rgba(222, 222, 222, 1);
+    -moz-box-shadow: -2px 0px 3px 1px rgba(222, 222, 222, 1);
+    box-shadow: -2px 0px 3px 1px rgba(222, 222, 222, 1);
+}
+
+/* ===================================================== */
+
+
+
+
+
+
+.productsectin2{
+    height: 345px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.psleft2{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+/* ========================== */
+
+.branddirectory{
+    height: 570px;
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 20px;
+    color: #565656; 
+    background-color: #eeeeee;
+}
+.linkheader{
+    padding-left: 15px;
+}
+
+.directorylink{
+    margin-top: 15px;
+    padding-left: 15px;
+    
+}
+
+.directorylink span{
+    font-size: 0.9rem;
+}
+.directorylink a{
+    font-size: 0.8rem;
+    color: #565656; 
+}
+
+
+/* =========================================== */
+footer{
+    height: 320px;
+    width: 100%;
+    margin: auto;
+    background-color: #212121;
+}
+
+.footpara{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footparainfo{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    font-weight: 600;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.footparahead p{
+    font-size: 0.8rem;
+    color: #878787;
+}
+
+.footparainfo a{
+    color: white;
+}
+
+/* .footerdiv{
+    height: 170px;
+    width: 1px;
+    border: 1px groove #4c4c4c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* -------------------------------------------------------- */
+
+.footerbtm{
+    height: 70px;
+    width: 100%;
+    border-top: 1px groove #454D5E;
+}
+
+.footbtmgroup{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0px 30px;
 }
