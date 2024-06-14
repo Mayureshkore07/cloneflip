@@ -15,7 +15,7 @@ body {
 
 
 .nav {
-
+   
     height: 50px;
     width: 100%;
     display: flex;
@@ -23,6 +23,7 @@ body {
     justify-content: space-evenly;
     color: #474748;
     background-color: white;
+    position: sticky;
 }
 
 .logo {
@@ -49,14 +50,23 @@ body {
 }
 
 .serach input {
-    height: 40px;
+    border-radius: 5px;
+    height: 30px;
     width: 100%;
     outline: none;
     border: none;
-    background: transparent;
+    color: #777A7E;
+    background-color: #F0F5FF;
     font-size: 1rem;
 }
 
+.logindiv{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    padding: 0px;   
+}
 .loginbtn {
     display: flex;
     align-items: center;
@@ -113,6 +123,10 @@ div>.ldicon {
     font-size: 10px;
 }
 
+.Navlinkcart{
+    text-decoration: none;
+    color: #000000;
+}
 
 
 .Recentserch {
@@ -292,8 +306,8 @@ div>.ldicon {
     height: 100px;
     width: 50px;
     cursor: pointer;
-    flex: 1;
-    margin: 0px;
+    flex: 0.1;
+    margin: px;
 }
 
 .productNavbar_top img {
@@ -302,13 +316,16 @@ div>.ldicon {
 }
 
 .productNavbar_top p {
-    font-weight: 510;
+    text-decoration: solid;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 100;
     display: flex;
 
 }
 
 .productNavbar_top:hover p {
-    color: #d6440a;
+    color: #100400;
 }
 
 .producttoparrow {
@@ -356,7 +373,9 @@ div>.ldicon {
     padding: 0px 15px;
     font-weight: 500;
     color: black;
+   z-index: 10;
     display: none;
+    
 
 }
 
@@ -391,6 +410,7 @@ div>.ldicon {
     padding: 0px 15px;
     font-weight: 500;
     color: black;
+    z-index: 10;
     display: none;
 }
 
@@ -418,6 +438,7 @@ div>.ldicon {
     padding: 0px 15px;
     font-weight: 500;
     color: black;
+    z-index: 10;
     display: none;
 
 }
@@ -443,6 +464,7 @@ div>.ldicon {
     padding: 0px 15px;
     font-weight: 500;
     color: black;
+    z-index: 10;
     display: none;
 }
 
@@ -475,6 +497,7 @@ div>.ldicon {
     padding: 0px 15px;
     font-weight: 500;
     color: black;
+    z-index: 10;
     display: none;
 }
 
@@ -508,6 +531,7 @@ div>.ldicon {
     padding: 0px 15px;
     font-weight: 500;
     color: black;
+    z-index: 10;
     display: none;
 }
 
@@ -586,7 +610,7 @@ div>.ldicon {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .psright img {
@@ -596,13 +620,13 @@ div>.ldicon {
 }
 
 .psleft {
-    height: 100%;
-    width: 1100px;
+    height: 95%;
+    width: 995px;
     background-color: white;
 }
 
 .productheader {
-    height: 80px;
+    height: 60px;
     width: 100%;
     padding: 0px 20px;
     display: flex;
@@ -684,9 +708,17 @@ div>.ldicon {
 /* ===================================================== */
 
 
+  
+  /* The Transformation */
+  .productimg:hover img {
+    transform: scale(1.1);
+  }
 
 
-
+.productimg img{
+    transition: transform .5s, filter 1.5s ease-in-out;
+    
+}
 
 .productsectin2{
     height: 345px;
